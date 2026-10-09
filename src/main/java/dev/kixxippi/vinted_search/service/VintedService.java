@@ -58,7 +58,9 @@ public class VintedService {
         }
 
         if (response.statusCode() == 403) {
-            throw new RuntimeException("Vinted returned 403 Forbidden");
+            throw new RuntimeException(
+                    "Vinted returned 403 Forbidden. Body: " + response.body()
+            );
         }
 
         if (response.statusCode() != 200) {
