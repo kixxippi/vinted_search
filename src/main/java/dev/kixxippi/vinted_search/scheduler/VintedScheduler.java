@@ -32,7 +32,7 @@ public class VintedScheduler {
         this.telegramBot = telegramBot;
     }
 
-    @Scheduled(fixedRate = 15_000)
+    @Scheduled(fixedRate = 60_000)
     public void checkVinted() {
 
         List<Search> searches = searchRepository.findByActiveTrue();
