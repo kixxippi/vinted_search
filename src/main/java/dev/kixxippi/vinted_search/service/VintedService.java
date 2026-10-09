@@ -45,6 +45,12 @@ public class VintedService {
                         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:157.0) Gecko/20100101 Firefox/157.0")
                 .header("Accept",
                         "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+                .header("Accept-Language",
+                        "sk-SK,sk;q=0.9,en-US;q=0.8,en;q=0.7")
+                .header("Accept-Encoding",
+                        "gzip, deflate")
+                .header("Cache-Control", "no-cache")
+                .header("Pragma", "no-cache")
                 .GET()
                 .build();
 
